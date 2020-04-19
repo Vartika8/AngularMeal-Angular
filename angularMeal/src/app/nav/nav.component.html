@@ -1,0 +1,28 @@
+<header>
+    <img [src] = "imagePath"/> <!--Property binding-->
+    <div calss = "container">
+        <nav>        
+        <a  routerLink="/restuarant" class = "logo">Meal On Wheels</a>
+        
+            <ul>
+              <!--Routing to diff compnts-->
+                <li>
+                  <a routerLink="/restuarant" >Home</a>
+                </li>
+                <li>
+                    <a routerLink="/cart">Cart</a>
+                </li>
+                <li>
+                    <div  class="dropdown">
+                        <button class="dropbtn">{{users.name}}</button>
+                        <div class="dropdown-content">
+                          <a routerLink="/customerprofile" >View Profile</a>
+                          <a routerLink="/test" >Test</a>
+                          <a routerLink="/login">Logout</a>
+                        </div>
+                      </div>
+                </li>                
+            </ul>
+        </nav>
+    </div>
+</header>

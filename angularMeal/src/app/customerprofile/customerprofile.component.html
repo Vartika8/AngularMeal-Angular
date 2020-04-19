@@ -1,0 +1,57 @@
+<div class="continer">
+
+    <h2>{{users.name}}</h2> 
+    
+    <hr/>
+    <div *ngIf="users">
+    <table>
+        <tr>
+            <td>
+                <div>
+                 <label><b> Name: </b></label> {{users.name}} 
+                </div>
+            </td>
+        </tr>
+          <tr>
+            <td>
+                <div>
+                 <label><b>Registered Mobile Number: </b></label> {{users.phone}} 
+                </div>
+            </td>
+        </tr>    <tr>
+            <td>
+                <div>
+                <label><b>Address: </b></label>
+                </div>
+            </td>
+            <tr>
+                <td>
+                     <label><b>Primamry Address: </b></label> {{users.address.baseAddress}} 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     <label><b>City: </b></label> {{users.address.city}} 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     <label><b>State: </b></label> {{users.address.state}} 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     <label><b>Pincode: </b></label> {{users.address.pincode}} 
+                </td>
+        
+        </tr>
+    
+        <br>
+        <br>
+        <tr><td><button [routerLink]="['../customerupdate']" class="btn btn-primary">Update Profile</button></td>
+            <td><button [routerLink]="['../login']" class="btn btn-primary">Back To Home</button></td>
+        </tr>
+    </table>
+    </div>
+    
+    </div>

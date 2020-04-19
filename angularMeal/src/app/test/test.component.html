@@ -1,0 +1,65 @@
+
+<h1>aslkjfsadlkjgfklsadj</h1>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2>Product Lis
+        
+
+        <div  class="card-deck col-md-12 col-sm-12 text-center" >
+            <div class="col-md-4 col-sm-4 wow fadeInUp" *ngFor="let user of Users1 | async" data-wow-delay="0.9s">
+                
+              <a href = "#">
+                  <div class="card">
+                   <img  class = "card-img-top"/>
+                   <div class="card-body">
+                      <h5 class="card-title">{{user.name}}</h5> 
+                     <!-- <p class="card-text">{{user.address.baseAddress}}</p>
+                      <p class="card-text">{{user.user.address.city}}</p>
+                     <p class="card-text">{{user.user.address.state}}</p>  -->
+                     <p class="card-text"><small class="text-muted">
+                     </small></p>
+                   </div>
+                 </div>
+              </a>	
+              </div>
+  <div class="panel-body">
+    <!-- <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>jobSeeker Id</th>
+          <th>jobSeeker address</th>
+          <th> location</th>
+          <th>userFirstName</th>
+          <th>UserLastName</th>
+          <th>UserLastName</th>
+          <th>UserLastName</th>
+          <th>UserLastName</th>
+          <th>UserLastName</th>
+          <th>UserLastName</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let users12 of Users1 | async">
+          <h1>Hello</h1> 
+          <td>{{ users12.phone }}</td>
+       <td>{{ users12.address }}</td>
+          <td>{{ users12.location }}</td>
+          <td>{{ users12.name }}</td>
+          <td>{{ users12.address.baseAddress }}</td>
+         <td>{{ users12.resume.fileName }}</td> 
+            <td>
+              <table>
+                <tr *ngFor="let education of jobSeeker1.educationSet">
+                  <td>{{ education.course }}</td>
+                  <td>{{ education.courseType }}</td>
+                  <td>{{ education.educationCategory.educationCategoryId }}</td>
+                  <td>{{ education.educationCategory.educationCategoryName }}</td>
+                </tr>
+              </table>
+            </td> 
+        </tr>
+      </tbody>
+    </table> -->
+  </div>
+</div>

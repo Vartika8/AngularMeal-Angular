@@ -1,0 +1,73 @@
+
+    <div class="landing">
+        <div class="landing-interact">
+          <div class="navbar">
+            <div class="branding">
+              <div><img class="logo" [src]="imagePath[0]" /></div>
+              <div class="logo-title">MEAL ON WHEELS</div>
+            </div>
+            
+                  <div class="links">
+                      <div> <button class="nav-button login" [routerLink]="['../login']" >Login</button>
+                      </div>
+                      <div>
+                          <button class="nav-button sign" [routerLink]="['../register']" >Sign up</button>
+                      </div>
+                  </div>
+                  <div class="title">
+                    <div id="typewriter" class="changing"></div>
+                    <div class="sub-title">Find awesome restaurants near you.</div>
+                  </div>
+
+                  
+          </div>
+          <div class="title">
+           
+          </div>
+          <div class="blockquote-wrapper">
+            <div class="blockquote">
+              <h1>
+               People Who  <span style="color:black">Love to Eat</span> are always the <span style="color:black">Best People</span>
+               </h1>
+            </div>
+          </div>
+          
+         
+            
+  
+          
+          <div class=" cities ">
+            <div class="cities-title">CITIES SERVED IN INDIA</div>
+            <div class="cities-sub-title">
+              Ahmedabad, Bangalore, Chennai, Delhi, Hyderabad, Kolkata, Mumbai, &
+              Pune
+            </div>
+          </div>
+        </div>
+        <div class="landing-images ">
+          <img class="landing-image " [src]="imagePath[1]" />"
+        </div>
+      </div>
+      <div class="features">
+        <div class="feature">
+          <div><img class="feature-image" [src]="imagePath[2]" /></div>
+          <div class="feature-title">Variety & Choices</div>
+          <div class="feature-desc">
+            Loathing for Italian, Thai, Indian or Chinese food? We got restaurants
+            covering many cuisines.
+          </div>
+        </div>
+        <div class="feature">
+          <div><img [src]="imagePath[3]" /></div>
+          <!--  -->
+          <div class="feature-title">Close To You</div>
+          <div class="feature-desc">
+            Get to know awesome resturants near you. Find out what they offer and
+            see customer reviews.
+          </div>
+        </div>
+      </div>
+    <br>
+    
+
+      <app-footer></app-footer>

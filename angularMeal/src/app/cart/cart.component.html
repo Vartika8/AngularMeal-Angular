@@ -1,0 +1,109 @@
+<!-- cart-->
+<app-nav></app-nav>
+<section id="cart" class="parallax-section">
+<<<<<<< HEAD
+
+    <div *ngIf="cartList==null" >
+        
+        <h4>Your Cart is empty!</h4>        
+        <button type="button" class="btn btn-light" >'Add Items' | translate</button>
+    </div>
+	<div >
+
+	    <table class="table table-striped table-dark">
+                
+            <tbody >
+              <tr *ngFor="let cartItem of cartList|async">
+                <!--<td><img [src]="imagePath" alt="itemImage"></td>-->
+                <td><p class="item-name" text-wrap>{{cartItem.food.foodName}}</p></td>
+                <td>
+                    <input type="number" min="1" max="10" (change)="changeQuantity(cartItem)" [(ngModel)]="cartItem.quantity">
+                </td>
+                <td>
+                    <p class="item-detail">Price:
+                    <span class="item-price">
+                        <strong class="cut"><span>&#8377;</span> {{ cartItem.price | number:'.2-2'}}</strong>
+                    </span>
+                    </p>
+                </td>
+                
+                <td>
+                    <button  type="button" class="btn btn-light" (click)="deleteCartItem(cartItem.id)" >Delete</button>
+                </td>
+              </tr>
+            </tbody>
+            <tr></tr>
+            <tr class="price-details">
+                <td class="calculate" col-12>
+                    <div class="cart-total">
+                        <strong>Order Total</strong>
+                        <span class="price"><span>&#8377;</span> {{total | number:'.2-2'}}</span>
+                    </div>
+                </td>
+                <td >
+                    <button  type="button" class="btn btn-light" > Checkout</button>
+=======
+
+    <div *ngIf="!isCart()">
+        
+        <h4>Your Cart is empty!</h4>        
+        <button type="button" class="btn btn-light" (click)="gotorestaurants()">{{'Add Items' | translate}}</button>
+    </div>
+	<div *ngIf="isCart()">
+
+	    <table class="table table-striped table-dark">
+                
+            <tbody *ngFor="let data of Cart">
+              <tr>
+                <td><img [src]="imagePath" alt="itemImage"></td>
+                <td><p class="item-name" text-wrap>{{ItemName}}</p></td>
+                <td><p class="item-detail" text-wrap>{{ItemQuantity}}</p></td>
+                <td>
+                    <p class="item-detail">Price:
+                    <span class="item-price">
+                        <strong class="cut">{{currency?.currencySymbol}}{{data.item.price.value | number:'.2-2'}}</strong>
+                    </span>
+                    </p>
+                </td>
+                <td>
+                    <div class="count">
+                        
+                        <span class="item-count" (click)="remove(data)">
+                            -
+                        </span>
+                       
+                        <span class="item-count show-count">
+                            {{data.item.itemQunatity}}
+                        </span>
+                        
+                        <span class="item-count" (click)="add(data)">
+                            +
+                        </span>
+                    </div>
+                </td>
+                <td>
+                    <button  type="button" class="btn btn-light" (click)="deleteItem(data)">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+            <tr></tr>
+            <tr class="price-details">
+                <td class="calculate" col-12>
+                    <div class="cart-total">
+                        <strong>{{"Order Total" | translate}}</strong>
+                        <span class="price">{{currency?.currencySymbol}} {{GrandTotal | number:'.2-2'}}</span>
+                    </div>
+                </td>
+                <td >
+                    <button  type="button" class="btn btn-light" (click)="continue()"> {{"Continue"| translate}}</button>
+>>>>>>> e8a2e3a96229d81edbb0fa8a496db9e2c4db555e
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
+<<<<<<< HEAD
+<app-footer></app-footer>
+=======
+<app-footer></app-footer>
+>>>>>>> e8a2e3a96229d81edbb0fa8a496db9e2c4db555e

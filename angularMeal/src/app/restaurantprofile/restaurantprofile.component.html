@@ -1,0 +1,182 @@
+<app-restnav></app-restnav>
+<<<<<<< HEAD
+<div class="image">
+<div class="continer">
+   
+  <h2>{{users.name}}</h2> 
+    
+  <hr/>
+  <div *ngIf="users">
+  <table class="center">
+      <tr>
+          <td>
+              <div>
+              <label><b>Name: </b></label> {{users.name}}
+              </div>
+          </td>
+      </tr>
+
+      <tr>
+          <td>
+              <div>
+              <label><b>Phone: </b></label> {{users.phone}}
+              </div>
+          </td>
+      </tr>    
+  
+          <tr>
+              <td>
+                  <div>
+                  <label><b>Address: </b></label> {{users.address.baseAddress}}
+             </div> </td>
+          </tr>
+          <tr>
+              <td><div>
+                  <label><b>City: </b></label> {{users.address.city}}
+              </div>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <div>
+                  <label><b>State: </b></label> {{users.address.state}}
+              </div></td>
+          </tr>
+          
+          <tr>
+              <td>
+                  <div>
+                  <label><b>Pincode: </b></label> {{users.address.pincode}}
+              </div>
+              </td>
+          </tr>
+  
+      <!-- ImageUplaod -->
+      <!--<tr>
+      <div class="card-body">
+          <form [FormGroup]="formTemplate" (submit)="onSubmit(formTemplate.value)">
+            <div class="text-center">
+              <img [src]="imgSrc" (click)="fileUploader.click()">
+            </div>
+            <div class="form-group">
+              <label>Select image to upload</label>
+              <input type="file" accept="image/*" class="form-control" #fileUploader formControlName="imageUrl"
+                (change)="showPreview($event)">
+              <div class="text-danger" *ngIf="isSubmitted && formControls.imageUrl.errors?.required">This field is required.
+              </div>
+            </div>
+            <div class="form-group">
+              <input class="form-control" formControlName="caption" placeholder="Caption">
+               <div class="text-danger" *ngIf="isSubmitted && formControls.caption.errors?.required">This field is required.
+              </div> 
+            </div>
+              <div class="form-group col-md-6">
+                <button type="submit" class="btn btn-success btn-block float-right">Upload</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </tr>-->
+      <br>
+      <br>
+      <br>
+      <tr><td><button [routerLink]="['../update-user-profile']" class="btn-black">Update Profile</button></td>
+      </tr>
+ </table>
+  </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    </div>
+=======
+
+<div class="continer">
+
+    <h2>{{restaurantname}}</h2> 
+    
+    <hr/>
+    <div *ngIf="restaurant">
+    <table >
+        <tr>
+            <td>
+                <div>
+                <label><b>Name: </b></label> {{restaurant.name}}
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                <label><b>Email: </b></label> {{restaurant.email}}
+                </div>
+            </td>
+        </tr>    
+        <tr>
+            <td>
+                <div>
+                <label><b>Phone: </b></label> {{restaurant.phone}}
+                </div>
+            </td>
+        </tr>    
+        <tr>
+            <td>
+                <div>
+                <label><b>Address: </b></label>
+                </div>
+            </td>
+            <tr>
+                <td>
+                    <label><b>Street: </b></label> {{restaurant.baseaddress}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><b>City: </b></label> {{restaurant.city}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><b>Pincode: </b></label> {{restaurant.pincode}}
+                </td>
+            </tr>
+        </tr>
+        <!-- ImageUplaod -->
+        <tr>
+        <div class="card-body">
+            <form [FormGroup]="formTemplate" (submit)="onSubmit(formTemplate.value)">
+              <div class="text-center">
+                <img [src]="imgSrc" (click)="fileUploader.click()">
+              </div>
+              <div class="form-group">
+                <label>Select image to upload</label>
+                <input type="file" accept="image/*" class="form-control" #fileUploader formControlName="imageUrl"
+                  (change)="showPreview($event)">
+                <div class="text-danger" *ngIf="isSubmitted && formControls.imageUrl.errors?.required">This field is required.
+                </div>
+              </div>
+              <div class="form-group">
+                <input class="form-control" formControlName="caption" placeholder="Caption">
+                <!-- <div class="text-danger" *ngIf="isSubmitted && formControls.caption.errors?.required">This field is required.
+                </div> -->
+              </div>
+                <div class="form-group col-md-6">
+                  <button type="submit" class="btn btn-success btn-block float-right">Upload</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </tr>
+        <br>
+        <br>
+        <tr><td><button [routerLink]="['../update-user-profile']" class="btn btn-primary">Update Profile</button></td>
+            <td><button [routerLink]="['../restaurant']" class="btn btn-primary">Back To Home</button></td>
+        </tr>
+    </table>
+    </div>
+    
+    </div>
+
+>>>>>>> e8a2e3a96229d81edbb0fa8a496db9e2c4db555e
+<app-footer></app-footer>

@@ -2,19 +2,13 @@ header {
     background: #000000;
     }
     
-<<<<<<< HEAD
     
     .logo {
       font-weight: bold;
       pointer-events: none;
       font-size: 25px;
       padding : .8em;
-=======
-    .logo {
-    font-weight: bold;
-    font-size: 25px;
-    padding : .8em;
->>>>>>> e8a2e3a96229d81edbb0fa8a496db9e2c4db555e
+
     }
     
     nav {
@@ -50,17 +44,12 @@ header {
     }
     
     img{
-<<<<<<< HEAD
         margin-top: 5px;
         float: left;
 
         height:50px;
         width: 50px;
-=======
-        margin-top: -25px;
-        float: left;
-        width:10%;
->>>>>>> e8a2e3a96229d81edbb0fa8a496db9e2c4db555e
+
     }
 
     /* Dropdown Button */
